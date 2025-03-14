@@ -35,17 +35,8 @@ Repozitář obsahuje několik užitečných průvodců a tutoriálů:
 
 ### Nastavení projektu
 
-1. Stáhněte tento repozitář:
-   - Klikněte na zelené tlačítko "Code" nahoře
-   - Vyberte "Download ZIP"
-   - Rozbalte stažený soubor do vámi vybrané složky
-   
-   nebo použijte git (pokud ho máte nainstalovaný):
-   ```bash
-   git clone https://github.com/AnetaPopelova/czechitas-da-data.git
-   ```
 
-2. Instalace potřebných balíčků:
+1. Instalace potřebných balíčků:
 
    #### Windows
    1. Otevřete příkazový řádek (CMD):
@@ -55,7 +46,7 @@ Repozitář obsahuje několik užitečných průvodců a tutoriálů:
 
    2. Spusťte instalační příkaz:
       ```bash
-      pip install pandas jupyter 
+      pip install pandas jupyter requests beautifulsoup4
       ```
 
    3. Ověření instalace:
@@ -71,7 +62,7 @@ Repozitář obsahuje několik užitečných průvodců a tutoriálů:
 
    2. Spusťte instalační příkaz:
       ```bash
-      pip3 install pandas jupyter requests beautifulsoup4 matplotlib
+      pip3 install pandas jupyter requests beautifulsoup4 
       ```
 
    3. Ověření instalace:
@@ -81,6 +72,17 @@ Repozitář obsahuje několik užitečných průvodců a tutoriálů:
       ```
 
    Pokud se při ověření zobrazí verze knihoven a žádné chybové hlášky, instalace proběhla úspěšně! 🎉
+
+
+2. Stáhněte tento repozitář:
+   - Klikněte na zelené tlačítko "Code" nahoře
+   - Vyberte "Download ZIP"
+   - Rozbalte stažený soubor do vámi vybrané složky
+   
+   nebo použijte git (pokud ho máte nainstalovaný):
+   ```bash
+   git clone https://github.com/AnetaPopelova/czechitas-da-data.git
+   ```
 
 ### Spuštění Jupyter Notebook
 
