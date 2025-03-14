@@ -45,14 +45,42 @@ Repozitář obsahuje několik užitečných průvodců a tutoriálů:
    git clone https://github.com/AnetaPopelova/czechitas-da-data.git
    ```
 
-2. Nainstalujte potřebné balíčky:
-   ```bash
-   # Windows
-   pip install pandas jupyter requests beautifulsoup4 matplotlib
+2. Instalace potřebných balíčků:
 
-   # macOS
-   pip3 install pandas jupyter requests beautifulsoup4 matplotlib
-   ```
+   #### Windows
+   1. Otevřete příkazový řádek (CMD):
+      - Stiskněte `Win + R`
+      - Napište `cmd` a stiskněte Enter
+      - nebo vyhledejte "Příkazový řádek" v nabídce Start
+
+   2. Spusťte instalační příkaz:
+      ```bash
+      pip install pandas jupyter 
+      ```
+
+   3. Ověření instalace:
+      ```bash
+      python -c "import pandas; print(f'Pandas verze: {pandas.__version__}')"
+      python -c "import jupyter; print('Jupyter je nainstalován')"
+      ```
+
+   #### macOS
+   1. Otevřete Terminál:
+      - Stiskněte `Cmd + Space`
+      - Napište "Terminal" a stiskněte Enter
+
+   2. Spusťte instalační příkaz:
+      ```bash
+      pip3 install pandas jupyter requests beautifulsoup4 matplotlib
+      ```
+
+   3. Ověření instalace:
+      ```bash
+      python3 -c "import pandas; print(f'Pandas verze: {pandas.__version__}')"
+      python3 -c "import jupyter; print('Jupyter je nainstalován')"
+      ```
+
+   Pokud se při ověření zobrazí verze knihoven a žádné chybové hlášky, instalace proběhla úspěšně! 🎉
 
 ### Spuštění Jupyter Notebook
 
@@ -63,25 +91,52 @@ Máte dvě možnosti:
    - Otevřete kterýkoliv `.ipynb` soubor
    - Když VS Code nabídne instalaci Jupyter rozšíření, potvrďte
    - V pravém horním rohu vyberte Python interpreter
+   - Úspěšné spuštění poznáte podle:
+     - V pravém horním rohu se zobrazí "Select Kernel"
+     - Po výběru kernelu se objeví tlačítka pro spouštění buněk
+     - První buňka půjde spustit pomocí "Run" tlačítka nebo `Shift + Enter`
 
 2. **Přes prohlížeč**:
-   ```bash
-   jupyter notebook
-   ```
-   - Automaticky se otevře prohlížeč s Jupyter rozhraním
-   - Vyberte notebook, který chcete otevřít
-
+   - Otevřete příkazový řádek/terminál (viz výše)
+   - Přejděte do složky s projektem pomocí příkazu `cd cesta/k/projektu`
+   - Spusťte Jupyter:
+     ```bash
+     jupyter notebook
+     ```
+   - Úspěšné spuštění poznáte podle:
+     - Automaticky se otevře prohlížeč s adresou začínající `http://localhost:8888`
+     - Uvidíte seznam souborů ve vaší složce
+     - Můžete kliknout na `.ipynb` soubor pro jeho otevření
 
 ## ❗ Časté problémy a řešení
 
 1. **SSL Certifikáty**: Viz `ssl-troubles.md`
-2. **Jupyter se nespouští**: Zkontrolujte instalaci pomocí:
-   ```bash
-   pip install --upgrade jupyter
-   ```
+
+2. **Jupyter se nespouští**: 
+   - Zkuste reinstalaci:
+     ```bash
+     # Windows
+     pip uninstall jupyter
+     pip install jupyter
+
+     # macOS
+     pip3 uninstall jupyter
+     pip3 install jupyter
+     ```
+   - Ověřte instalaci:
+     ```bash
+     jupyter --version
+     ```
+
 3. **Python není nalezen**: 
-   - Windows: Zkontrolujte, zda je Python přidán do PATH
-   - macOS: Zkuste použít `pip3` místo `pip`
+   - Windows: 
+     - Otevřete Nastavení systému → Systém → O systému → Upřesňující nastavení systému
+     - Klikněte na "Proměnné prostředí"
+     - V sekci "Systémové proměnné" najděte "Path"
+     - Zkontrolujte, zda obsahuje cestu k Pythonu (např. `C:\Python39`)
+   - macOS: 
+     - Zkuste použít `pip3` místo `pip`
+     - Ověřte instalaci Pythonu: `which python3`
 
 ## 🆘 Podpora
 
