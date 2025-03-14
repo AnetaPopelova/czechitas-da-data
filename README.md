@@ -35,8 +35,13 @@ Repozitář obsahuje několik užitečných průvodců a tutoriálů:
 
 ### Nastavení projektu
 
-
 1. Instalace potřebných balíčků:
+
+   Budeme instalovat tyto Python balíčky:
+   - **pandas**: Hlavní knihovna pro analýzu dat - umožňuje načítat, upravovat a analyzovat data v tabulkové podobě
+   - **jupyter**: Interaktivní prostředí pro psaní a spouštění Python kódu, vytváření vizualizací a dokumentace
+   - **requests**: Knihovna pro stahování dat z internetu a práci s webovými API
+   - **beautifulsoup4**: Nástroj pro parsování HTML a XML souborů, používá se pro web scraping (získávání dat z webových stránek)
 
    #### Windows
    1. Otevřete příkazový řádek (CMD):
