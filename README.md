@@ -1,65 +1,92 @@
-# Czechitas DA: Python Data Course Materials
+# Czechitas DA: Materiály pro Python kurz datové analýzy
 
-This repository contains learning materials and resources for the Czechitas Data Analytics course. The materials cover essential topics in data analysis using Python, focusing on practical applications and real-world scenarios.
+Tento repozitář obsahuje výukové materiály a zdroje pro kurz Datové analýzy od Czechitas. 
 
-## 📚 Course Content
+## 📚 Obsah kurzu
 
-The course is structured into several key modules:
+Kurz je rozdělen do několika klíčových modulů:
 
-1. **Pandas Fundamentals** (`01-pandas/`)
-   - Introduction to data manipulation with Pandas
-   - Basic data operations and analysis
+1. **Základy Pandas** (`01-pandas/`)
+   - Úvod do manipulace s daty pomocí Pandas
+   - Základní operace
 
-2. **Advanced Pandas** (`02-pandas-2/`)
-   - Advanced data manipulation techniques
-   - Data transformation and analysis
+2. **Pokročilý Pandas** (`02-pandas-2/`)
+   - Pokročilé techniky manipulace s daty
+   - Transformace dat
 
-3. **Regular Expressions** (`03-regularni-vyrazy/`)
-   - Pattern matching and text processing
-   - Data cleaning and validation
+3. **Regulární výrazy** (`03-regularni-vyrazy/`)
+   - Vyhledávání vzorů v textu
+   - Čištění a validace dat
 
 4. **Web Scraping** (`04-web-scraping/`)
-   - Extracting data from websites
-   - Working with web-based data sources
+   - Získávání dat z webových stránek
+   - Práce s webovými zdroji dat
 
-## 📝 Additional Resources
+## 📝 Další zdroje
 
-The repository includes several helpful guides and tutorials:
+Repozitář obsahuje několik užitečných průvodců a tutoriálů:
 
-- `pandas-vs-sql.md` - Comparison between Pandas and SQL operations
-- `odkazovani-na-soubory.md` - Guide on file referencing
-- `ssl-troubles.md` - Troubleshooting SSL connection issues
-- `zavorky-python.ipynb` - Python parentheses and syntax guide
+- `pandas-vs-sql.md` - Srovnání operací v Pandas a SQL
+- `odkazovani-na-soubory.md` - Průvodce odkazováním na soubory
+- `ssl-troubles.md` - Řešení problémů s SSL připojením
+- `zavorky-python.ipynb` - Průvodce závorkami a syntaxí v Pythonu
 
-## 🛠️ Getting Started
+## 🛠️ Instalace a nastavení
 
-To use these materials:
+### Nastavení projektu
 
-1. Clone this repository:
+1. Stáhněte tento repozitář:
+   - Klikněte na zelené tlačítko "Code" nahoře
+   - Vyberte "Download ZIP"
+   - Rozbalte stažený soubor do vámi vybrané složky
+   
+   nebo použijte git (pokud ho máte nainstalovaný):
    ```bash
-   git clone https://github.com/your-username/czechitas-da-pj24.git
+   git clone https://github.com/AnetaPopelova/czechitas-da-data.git
    ```
 
-2. Make sure you have Python installed with the necessary packages:
+2. Nainstalujte potřebné balíčky:
    ```bash
-   pip install pandas numpy jupyter
+   # Windows
+   pip install pandas jupyter requests beautifulsoup4 matplotlib
+
+   # macOS
+   pip3 install pandas jupyter requests beautifulsoup4 matplotlib
    ```
 
-3. Navigate through the notebooks in order, starting with the basics in the `01-pandas` directory.
+### Spuštění Jupyter Notebook
 
-## 📖 How to Use
+Máte dvě možnosti:
 
-- Each directory contains specific topic-related materials
-- Follow the numbered directories for a structured learning path
-- Refer to the markdown files for additional guidance and troubleshooting
-- Practice exercises are included in the notebooks
+1. **Přes VS Code** (doporučeno pro začátečníky):
+   - Otevřete složku projektu ve VS Code
+   - Otevřete kterýkoliv `.ipynb` soubor
+   - Když VS Code nabídne instalaci Jupyter rozšíření, potvrďte
+   - V pravém horním rohu vyberte Python interpreter
 
-## 🤝 Contributing
+2. **Přes prohlížeč**:
+   ```bash
+   jupyter notebook
+   ```
+   - Automaticky se otevře prohlížeč s Jupyter rozhraním
+   - Vyberte notebook, který chcete otevřít
 
-If you find any issues or have suggestions for improvements, please feel free to:
-1. Open an issue
-2. Submit a pull request
 
-## 📄 License
+## ❗ Časté problémy a řešení
 
-This material is provided for educational purposes as part of the Czechitas Data Analytics course.
+1. **SSL Certifikáty**: Viz `ssl-troubles.md`
+2. **Jupyter se nespouští**: Zkontrolujte instalaci pomocí:
+   ```bash
+   pip install --upgrade jupyter
+   ```
+3. **Python není nalezen**: 
+   - Windows: Zkontrolujte, zda je Python přidán do PATH
+   - macOS: Zkuste použít `pip3` místo `pip`
+
+## 🆘 Podpora
+
+- Dotazy ke kurzu směřujte na Discord
+
+## 📄 Licence
+
+Tento materiál je poskytován pro vzdělávací účely jako součást kurzu Digitální akademie: DATA od Czechitas.
