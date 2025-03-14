@@ -7,13 +7,17 @@ Po opatřeních viz níže ještě vypni/zapni VS Code.
 ## Pro uživatele macOS
 
 ### Instalace certifikátů macOS:
-Python 3.6 a novější na macOS obsahuje dodatečný skript, který instaluje certifikáty. Spusťte tento skript pro instalaci potřebných certifikátů.
+Python 3.6 a novější na macOS obsahuje dodatečný skript, který instaluje certifikáty. Spusťte v terminálu tento skript pro instalaci potřebných certifikátů.
 ```py
 /Applications/Python\ 3.x/Install\ Certificates.command
+/Aplikace/Python\ 3.x/Install\ Certificates.command
+
 ```
 
-Nahraďte 3.x vaší konkrétní verzí Pythonu.
+Nahraďte 3.x vaší konkrétní verzí Pythonu a cestu k souboru případně upravte dle jazyka vašeho OS.
 
+
+## Nepomohlo to?
 ### Instalace certifikátů pomocí Certifi:
 Instalace Pythonu na macOS obvykle nezahrnuje potřebné certifikáty pro ověření SSL spojení. Můžete potřebovat nainstalovat balíček certifi a nastavit vaše Python prostředí, aby používalo tyto certifikáty.Nejprve se ujistěte, že máte nainstalovaný balíček certifi:
 ```py
