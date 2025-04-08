@@ -64,6 +64,7 @@ Zkus nyní regulární výraz ještě zdokonalit a povol na druhém místě pouz
 Platné znaky na druhém místě tedy budou tyto: A, B, C, E, H, J, K, L, M, P, S, T, U, Z.
 
 ```
+\d[ABCEHJKLMPSTUZ]\w \d{4}
 \d(A|B|C|E|H|J|K|L|M|P|S|T|U|Z)\w \d{4}
 ```
 https://regex101.com/r/ZrPyTs/1
